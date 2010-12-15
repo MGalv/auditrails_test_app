@@ -1,0 +1,21 @@
+<h1>Audits#index</h1>
+
+<table>
+  <tr>
+    <th>Dumped changes</th>
+    <th>Action</th>
+    <th>Model changed</th>
+    <th>Element ID</th>
+    <th>Action invoker</th>
+  </tr>
+
+<% @audits.each do |audit| %>
+  <tr>
+    <td><%= audit.changes %></td>
+    <td><%= audit.action %></td>
+    <td><%= audit.model_changed %></td>
+    <td><%= audit.element_id %></td>
+    <td><%= audit.action_invoker %></td>
+  </tr>
+<% end %>
+</table>
